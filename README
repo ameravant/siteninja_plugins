@@ -1,0 +1,13 @@
+SiteNinja CMS
+
+Usage:
+
+1. Create your new application and go into the folder:
+   rails myapp
+   cd myapp
+
+2. Run the installation template file:
+   rake rails:template LOCATION=../siteninja/siteninja_template.rb
+
+3. Start your server
+   script/server
