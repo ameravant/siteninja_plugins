@@ -51,7 +51,7 @@ module TinyMCEHelper
   end
 
   def include_tiny_mce_js
-    javascript_include_tag ((RAILS_ENV == 'development') ? "/plugin_assets/siteninja_core/tiny_mce/tiny_mce_src" : "/plugin_assets/siteninja_core/tiny_mce/tiny_mce")
+    javascript_include_tag ((RAILS_ENV == 'development') ? "http://s3.amazonaws.com/siteninja/plugin_assets/siteninja_core/tiny_mce/tiny_mce_src" : "http://s3.amazonaws.com/siteninja/plugin_assets/siteninja_core/tiny_mce/tiny_mce")
   end
   def include_tiny_mce_js_if_needed
     include_tiny_mce_js if using_tiny_mce?
